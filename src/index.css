@@ -1,0 +1,135 @@
+
+/* src/index.css */
+
+/* --------------------------------
+   Global Reset
+-------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(124, 58, 237, 0.12),
+      transparent
+    ),
+    #0b0712;
+  color: #f4f4f5;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------
+   Root
+-------------------------------- */
+
+#root {
+  min-height: 100vh;
+}
+
+/* --------------------------------
+   Links
+-------------------------------- */
+
+a {
+  color: inherit;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* --------------------------------
+   Buttons & Inputs
+-------------------------------- */
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* --------------------------------
+   Selection
+-------------------------------- */
+
+::selection {
+  background: rgba(167, 139, 250, 0.25);
+  color: #ffffff;
+}
+
+/* --------------------------------
+   Scrollbar
+-------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08050e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272033;
+  border-radius: 999px;
+  border: 2px solid #08050e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #43365a;
+}
+
+/* Firefox */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #272033 #08050e;
+}
+
+/* --------------------------------
+   Focus
+-------------------------------- */
+
+:focus-visible {
+  outline: 2px solid rgba(167, 139, 250, 0.8);
+  outline-offset: 3px;
+}
+
+/* --------------------------------
+   Utility
+-------------------------------- */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* --------------------------------
+   Mobile
+-------------------------------- */
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
